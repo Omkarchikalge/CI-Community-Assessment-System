@@ -26,12 +26,11 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 app = FastAPI(title="Community NLP Assessment Platform")
 
 # -------------------- CORS --------------------
+app = FastAPI(title="Community NLP Assessment Platform")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173"
-    ],
+    allow_origins=["*"],   # For hackathon demo
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "http://10.57.52.222:8000";
 
 export async function apiFetch(endpoint, options = {}) {
   const token = localStorage.getItem("token");
