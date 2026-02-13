@@ -1,13 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Register from "./pages/register";
-import TeacherDashboard from "./pages/TeacherDashboard";
+import TeacherDashboard from "./pages/Teacherdashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 import Room from "./pages/Room";
 import TakeTest from "./pages/TakeTest";
 import Analytics from "./pages/Analytics";
-
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute";
 
